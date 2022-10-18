@@ -1,0 +1,16 @@
+import { Canvas, Meta, Story } from "@storybook/addon-docs";
+
+import { Button } from "./Button";
+
+<Meta title="Atoms/Button" component={Button} />
+
+# Button
+
+With `MDX`, we can define a story for `Checkbox` right in the middle of our Markdown documentation.
+
+<Canvas>
+  <Story name="Example Docs of the button">
+    <Button>Hello world</Button>
+    <Button isPrimary={false}>goodbye world</Button>
+  </Story>
+</Canvas>
