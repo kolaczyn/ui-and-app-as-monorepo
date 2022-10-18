@@ -1,11 +1,11 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
-import { getSumOfTwoRandomNumber } from "@yarn-workspaces/admin-frontend";
+import { getSumOfTwoRandomNumbers } from "@yarn-workspaces/utils";
 import styles from "../styles/Home.module.css";
 
 const Home: NextPage = () => {
-  const sumOfTwoRandomNums = getSumOfTwoRandomNumber();
+  const sumOfTwoRandomNums = getSumOfTwoRandomNumbers();
   return (
     <div className={styles.container}>
       <Head>

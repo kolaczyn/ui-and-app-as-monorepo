@@ -7,4 +7,5 @@ module.exports = {
   subtract,
   getRandomNumber,
   getTwentyOne: () => 21,
+  getSumOfTwoRandomNumbers: () => add(getRandomNumber(), 9),
 };
