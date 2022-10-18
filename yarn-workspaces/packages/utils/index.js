@@ -1,6 +1,6 @@
-const add = require("./math/add");
-const subtract = require("./math/subtract");
-const getRandomNumber = require("./getRandomNumber");
+const { add } = require("./math/add");
+const { subtract } = require("./math/subtract");
+const { getRandomNumber } = require("./getRandomNumber");
 
 module.exports = {
   add,
