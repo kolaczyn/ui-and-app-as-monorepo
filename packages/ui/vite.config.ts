@@ -7,7 +7,7 @@ export default defineConfig({
   plugins: [react(), dts({ insertTypesEntry: true })],
   build: {
     lib: {
-      entry: path.resolve(__dirname, "src/lib/index.ts"),
+      entry: path.resolve(__dirname, "src/index.ts"),
       name: "@yarn-workspaces/ui",
       formats: ["es", "umd", "cjs"],
       fileName: (format) => `index.${format}.js`,
