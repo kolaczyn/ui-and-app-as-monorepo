@@ -1,5 +1,5 @@
 {
-  "name": "admin-frontend",
+  "name": "@yarn-workspaces/admin-frontend",
   "version": "1.0.0",
   "main": "index.js",
   "author": "Paweł Kołaczyński",

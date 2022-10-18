@@ -1,10 +1,10 @@
 {
-  "name": "frontend",
+  "name": "@yarn-workspaces/frontend",
   "version": "1.0.0",
   "main": "index.js",
   "author": "Paweł Kołaczyński",
   "license": "MIT",
   "dependencies": {
-    "admin-frontend": "1.0.0"
+    "@yarn-workspaces/admin-frontend": "1.0.0"
   }
 }
