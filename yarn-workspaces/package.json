@@ -1,7 +1,8 @@
 {
+  "private": true,
   "name": "yarn-workspaces",
-  "version": "1.0.0",
-  "main": "index.js",
-  "author": "Paweł Kołaczyński",
-  "license": "MIT"
+  "workspaces": [
+    "admin-frontend",
+    "frontend"
+  ]
 }
