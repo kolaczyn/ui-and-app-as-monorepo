@@ -1,4 +1,8 @@
-const { getRandomNumber, add } = require("@yarn-workspaces/utils");
+const {
+  getRandomNumber,
+  add,
+  getTwentyOne,
+} = require("@yarn-workspaces/utils");
 
 const helloWorld = () => {
   console.log("hello world");
@@ -12,6 +16,6 @@ const greeter = (name) => {
   console.log(`hello ${name}`);
 };
 
-const getSumOfTwoRandomNumber = () => add(getRandomNumber(), getRandomNumber());
+const getSumOfTwoRandomNumber = () => add(getRandomNumber(), getTwentyOne());
 
 module.exports = { helloWorld, byeWorld, greeter, getSumOfTwoRandomNumber };

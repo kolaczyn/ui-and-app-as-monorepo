@@ -6,4 +6,5 @@ module.exports = {
   add,
   subtract,
   getRandomNumber,
+  getTwentyOne: () => 21,
 };
