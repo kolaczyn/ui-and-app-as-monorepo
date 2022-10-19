@@ -1,5 +1,5 @@
 {
-  "name": "@yarn-workspaces/ui",
+  "name": "@yarn-workspaces/styled-components",
   "private": true,
   "version": "0.0.0",
   "scripts": {

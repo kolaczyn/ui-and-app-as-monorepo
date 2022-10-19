@@ -8,7 +8,7 @@ export default defineConfig({
   build: {
     lib: {
       entry: path.resolve(__dirname, "src/index.ts"),
-      name: "@yarn-workspaces/ui",
+      name: "@yarn-workspaces/styled-components",
       formats: ["es", "umd", "cjs"],
       fileName: (format) => `index.${format}.js`,
     },
