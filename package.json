@@ -1,6 +1,10 @@
 {
   "private": true,
   "name": "yarn-workspaces",
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev"
+  },
   "workspaces": [
     "packages/*"
   ],

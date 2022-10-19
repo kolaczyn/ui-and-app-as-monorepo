@@ -4,7 +4,7 @@ import Head from "next/head";
 // @ts-ignore
 import { getSumOfTwoRandomNumbers } from "@yarn-workspaces/utils";
 import { Button as ButtonStyled } from "@yarn-workspaces/styled-components";
-import { Button as ButtonEmotion } from "@yarn-workspaces/emotion";
+// import { Button as ButtonEmotion } from "@yarn-workspaces/emotion";
 
 const Home: NextPage = () => {
   return (
@@ -17,8 +17,8 @@ const Home: NextPage = () => {
       <ButtonStyled>styled components</ButtonStyled>
       <ButtonStyled>{getSumOfTwoRandomNumbers()}</ButtonStyled>
       <hr />
-      <ButtonEmotion>emotion components</ButtonEmotion>
-      <ButtonEmotion>{getSumOfTwoRandomNumbers()}</ButtonEmotion>
+      {/* <ButtonEmotion>emotion components</ButtonEmotion>
+      <ButtonEmotion>{getSumOfTwoRandomNumbers()}</ButtonEmotion> */}
     </div>
   );
 };
