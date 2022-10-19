@@ -5,15 +5,7 @@ import babel from "vite-plugin-babel";
 import dts from "vite-plugin-dts";
 
 export default defineConfig({
-  plugins: [
-    babel({
-      babelConfig: {
-        plugin: ["styled-jsx/babel"],
-      },
-    }),
-    react(),
-    dts({ insertTypesEntry: true }),
-  ],
+  plugins: [babel(), react(), dts({ insertTypesEntry: true })],
   build: {
     lib: {
       entry: path.resolve(__dirname, "src/index.ts"),

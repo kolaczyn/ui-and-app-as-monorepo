@@ -3,5 +3,8 @@
   "name": "yarn-workspaces",
   "workspaces": [
     "packages/*"
-  ]
+  ],
+  "devDependencies": {
+    "turbo": "^1.5.6"
+  }
 }
