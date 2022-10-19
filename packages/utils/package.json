@@ -1,8 +1,29 @@
 {
   "name": "@yarn-workspaces/utils",
   "version": "1.0.0",
-  "main": "index.js",
   "author": "Paweł Kołaczyński",
   "license": "MIT",
-  "types": "index.d.ts"
+  "scripts": {
+    "build": "rimraf dist && yarn build:esm && yarn build:umd && yarn build:commonjs && yarn build:declarations",
+    "build:esm": "tsc --module esnext --declarationMap false --outDir dist/esm",
+    "build:umd": "tsc --module umd --declarationMap false --outDir dist/umd",
+    "build:commonjs": "tsc --module commonjs --declarationMap false --outDir dist/cjs",
+    "build:declarations": "tsc --declaration true --emitDeclarationOnly --outFile dist/index.d.ts"
+  },
+  "devDependencies": {
+    "rimraf": "^3.0.2",
+    "typescript": "^4.8.4"
+  },
+  "files": [
+    "dist"
+  ],
+  "main": "/dist/cjs/index.js",
+  "module": "./dist/umd/index.js",
+  "types": "/dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/umd/index.js",
+      "require": "./dist/cjs/index.js"
+    }
+  }
 }
