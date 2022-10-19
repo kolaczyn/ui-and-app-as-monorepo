@@ -5,10 +5,28 @@ type Props = {
   isPrimary?: boolean;
 };
 
+const AnotherP = () => {
+  return <p>this p shouldn't be red</p>;
+};
+
 export const Button = ({ children, isPrimary = true }: Props) => {
   return (
-    <button>
-      {isPrimary ? "primary" : "secondary"}:{children}
-    </button>
+    <>
+      <div>
+        <p>only this paragraph will get the style :)</p>
+        <AnotherP />
+
+        {/* TODO fix error */}
+        {/* @ts-ignore */}
+        <style jsx>{`
+          p {
+            color: blue;
+          }
+        `}</style>
+      </div>
+      <button>
+        {isPrimary ? "primary" : "secondary"}:{children}
+      </button>
+    </>
   );
 };

@@ -1,10 +1,19 @@
 import { defineConfig } from "vite";
 import path from "node:path";
 import react from "@vitejs/plugin-react";
+import babel from "vite-plugin-babel";
 import dts from "vite-plugin-dts";
 
 export default defineConfig({
-  plugins: [react(), dts({ insertTypesEntry: true })],
+  plugins: [
+    babel({
+      babelConfig: {
+        plugin: ["styled-jsx/babel"],
+      },
+    }),
+    react(),
+    dts({ insertTypesEntry: true }),
+  ],
   build: {
     lib: {
       entry: path.resolve(__dirname, "src/index.ts"),
